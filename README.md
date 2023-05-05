@@ -1,6 +1,6 @@
 # Название Проекта
 
-js-advanced-diplom
+crm-fullstack
 
 # Описание
 
