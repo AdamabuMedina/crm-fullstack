@@ -1,0 +1,21 @@
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../assets/#{$url}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@include font-face("Ubuntu", "../assets/fonts/UbuntuRegular", 400, normal);
+@include font-face("Ubuntu", "../assets/fonts/UbuntuMedium", 500, normal);
+@include font-face("Work Sans", "../assets/fonts/WorkSansLight", 300, normal);
+@include font-face("Work Sans", "../assets/fonts/WorkSansRegular", 400, normal);
+@include font-face(
+  "Work Sans",
+  "../assets/fonts/WorkSansSemiBold",
+  600,
+  normal
+);
+@include font-face("Work Sans", "../assets/fonts/WorkSansBold", 700, normal);
